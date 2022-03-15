@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function login(){
+            if(confirm("确定要提交吗？"))
+                window.location="submit.jsp";
+        }
+        function sm(){
+            if(confirm("确定要重置吗？"))
+                window.location="submit.jsp";
+        }
+    </script>
+</head>
+<body>
+    <h2>表单信息</h2>
+    <form action="test.jsp" name="form1" method="get">
+      
+        账号：
+        <input type="text" placeholder="请输入账号：" maxlength="8" > <br/>
+        邮箱：
+        <input type="text" placeholder="请输入邮箱：" maxlength="8" > <br/>
+
+        密码：
+        <input type="password" placeholder="请输入密码" maxlength="8" > <br/>
+
+        性别：
+        <input type="radio" name="sex" value="man">男
+        <input type="radio" name="sex" value="woman" >女
+        
+
+
+        <br>
+        技能： 
+        <input type="checkbox" name="hobby" value="HTML+css">HTML+css
+        <input type="checkbox" name="hobby" value="JavaScript">JavaScript
+        <input type="checkbox" name="hobby" value="PHP">PHP
+        <input type="checkbox" name="hobby" value="Java">Java
+
+
+        <br/>
+        头像<input type="file">
+
+        <br />
+       现居地：<select name="省份" id="2">
+        <option value="anhui">安徽省</option>
+        <option value="zhejiang">浙江省</option>
+        </select>
+        <select name="shi" id="3">
+        <option value="jinhua">合肥市</option>
+        <option value="hangzhoushi">杭州市</option>
+        <option value="wenzhou">温州市</option>
+        </select>
+       
+       
+       <br>
+       <br>
+
+
+       
+        
+       
+        
+
+        <label for="course">所学课程：</label>
+        <select name="coursename" id="course" multiple size="3"> <!--多选框-->
+            <option value="english" selected>web</option>
+            <option value="math">Java</option>
+            <option value="Chinese">Cisco</option>
+            <option value="ch">高等数学</option>
+        </select><br>
+        
+        
+
+        <br>
+        留言：
+        <textarea name="longtext" id="text1" cols="30" rows="10">请输入留言：</textarea>
+        
+        <br>
+        <label for="gender">验证码</label>
+       
+	<input type="text" placeholder="" maxlength="8" readonly><img src="yanzhengma.png" alt="sorry"> <br/>
+    
+    <input type="submit" value="提交">  <input type="submit" value="重置" >
+
+<br>
+        
+
+        
+
+    </form>
+</body>
+</html>
